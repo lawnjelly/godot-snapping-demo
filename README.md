@@ -22,7 +22,7 @@ This is a little hard to understand. If you move something by non integer amount
 Be very careful with scaling, if you use it at all. Anything other than whole number scaling (2, 3, 4 etc) will ensure that your carefully placed sprites do not end up on the integer grid. Same problem happens with rotation. Anything other than 90 degrees angles may cause problems.
 
 # History
-I suspect that the reason a lot of newbies have problems with this is that they don't appreciate that old games faced a lot more hard rules than modern games. These rules had a side effect of making the games appear better.
+I suspect that the reason a lot of users have problems with this is that they don't appreciate that old games faced a lot more hard rules than modern games. These rules had a side effect of making the games appear better.
 
 * Positions were based on integers because that was all that was available.
 * There was no problem with fractions from physics engines, because there were no physics engines.
