@@ -1,6 +1,6 @@
 # godot-snapping-demo
 
-![Snapping Demo Pic](snapping_demo_pic.png)
+![Snapping Demo Pic](snapping_demo.png)
 
 A lot of people have been confused as to how to make pixel snapped 2d retro games in Godot. Hopefully here this simple demo and some guidelines will help. This is how I managed to get pixel perfect snapping to work, there may be other ways.
 
