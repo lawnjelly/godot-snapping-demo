@@ -32,6 +32,8 @@ A problem occurs in that now we have monitors with a large range of refresh rate
 
 The alternative which is usually suggested it to move objects in `_physics_process`, which gives a fixed tick rate (defaults to 60hz). This works reasonably and is probably the best option for pixel games.
 
+You can also move objects in the frame `_process` and make use of the delta argument to decide how many pixels to move. This may work for you, but ensure the move is an integer change.
+
 #### Problems with fixed tick rate
 One remaining problem with fixed tick rate is that on some systems, frames will not match up to physics ticks exactly. Sometimes a single tick will be displayed over 2 frames, sometimes over 1. This leads to a visible jitter.
 
