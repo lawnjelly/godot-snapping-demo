@@ -2,7 +2,7 @@
 
 ![Snapping Demo Pic](snapping_demo.png)
 
-A lot of people have been confused as to how to make pixel snapped 2d retro games in Godot. Hopefully here this simple demo and some guidelines will help. This is how I managed to get pixel perfect snapping to work, there may be other ways.
+A lot of people have been confused as to how to make pixel snapped 2d retro games in Godot. Hopefully here this simple demo and some guidelines will help. This is how I managed to get pixel perfect snapping to work, there may be other ways. Note this is what worked _for me_, 2d is not my main area, so it is possible there may be better ways.
 
 ### Rule 1 - Snap everything to integers (whole numbers)
 Godot enables and encourages you to use floating point (fraction) numbers for coordinates, sizes etc. Instead of using floats, use integers in your positions etc, and only apply whole number changes, so the relationship is in integers.
