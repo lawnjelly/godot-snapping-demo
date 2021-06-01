@@ -32,9 +32,9 @@ A problem occurs in that now we have monitors with a large range of refresh rate
 
 The alternative which is usually suggested it to move objects in `_physics_process`, which gives a fixed tick rate (defaults to 60hz). This works reasonably and is probably the best option for pixel games.
 
-### Problems with fixed tick rate
-The big problem with fixed tick rate is that on some systems, frames will not match up to physics ticks exactly. Sometimes a single tick will be displayed over 2 frames, sometimes over 1. This leads to a visible jitter.
+#### Problems with fixed tick rate
+One remaining problem with fixed tick rate is that on some systems, frames will not match up to physics ticks exactly. Sometimes a single tick will be displayed over 2 frames, sometimes over 1. This leads to a visible jitter.
 
 With non-pixel games, there is a solution to this problem - fixed timestep interpolation. It moves objects to fractional positions between each physics tick in order to compensate for this difference between the frame time and the tick time.
 
-The problem is that with pixel games, we can't really use this approach. Or rather, it doesn't work as well, because we can't use fractional positions, so we still get temporal aliasing occurring.
+Unfortunately with pixel games, we can't really use this approach. Or rather, it doesn't work as well, because we can't use fractional positions, so we still get temporal aliasing occurring.
