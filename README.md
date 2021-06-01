@@ -18,6 +18,9 @@ As with sprites, it is essential that the background is snapped to the integer g
 ### Rule 4 - Only place, and move objects by integer amounts
 This is a little hard to understand. If you move something by non integer amounts, it will lose the exact position on the integer grid. Using the physics engine will give results as float values, which is problematic. You should therefore either quantize these to the grid before applying them to a sprite position, or better still, don't use the physics engine, and do the movement / collision detection yourself. Physics engines are not well suited to pixel games.
 
+### Rule 5 - Beware scaling, rotation
+Be very careful with scaling, if you use it at all. Anything other than whole number scaling (2, 3, 4 etc) will ensure that your carefully placed sprites do not end up on the integer grid. Same problem happens with rotation. Anything other than 90 degrees angles may cause problems.
+
 # History
 I suspect that the reason a lot of newbies have problems with this is that they don't appreciate that old games faced a lot more hard rules than modern games. These rules had a side effect of making the games appear better.
 
