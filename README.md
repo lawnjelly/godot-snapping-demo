@@ -26,7 +26,7 @@ I suspect that the reason a lot of users have problems with this is that they do
 
 * Positions were based on integers because that was all that was available.
 * There was no problem with fractions from physics engines, because there were no physics engines.
-* Moves were made by regular amounts. If you wanted something to move slowly, it moved by 1 pixel per frame. Fast, 2 pixels per frame. Very slow, 1 pixel every 2 frames. etc etc.
+* Moves were made by regular amounts. If you wanted something to move slowly, it moved by 1 pixel per frame. Fast, 2 pixels per frame. Very slow, 1 pixel every 2 frames (e.g. bitshifting, fixed point). etc etc.
 
 Old games made for display on a television knew that the refresh rate would be a fixed value. Usually either 50hz (PAL) or 60 hz (NTSC). Therefore moving an object 1 pixel / frame guaranteed a certain speed, and also guaranteed nice smooth jitter free motion on the screen.
 
